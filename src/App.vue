@@ -8,6 +8,8 @@
     <div class="row">
       <!-- Servers -->
       <app-servers></app-servers>
+      <!-- <Servers /> -->
+
       <!-- Server Details -->
       <app-server-details></app-server-details>
     </div>
@@ -20,14 +22,16 @@
 </template>
 
 <script>
-import Header from "./Header";
-import Servers from "./Servers";
-import ServerDetails from "./ServerDetails";
-import Footer from "./Footer";
+import Header from "./components/Shared/Header";
+import Servers from "./components/Server/Servers";
+import ServerDetails from "./components/Server/ServerDetails";
+import Footer from "./components/Shared/Footer";
 export default {
   components: {
+    // appHeader: Header,
     "app-header": Header,
     "app-servers": Servers,
+    // Servers,
     "app-server-details": ServerDetails,
     "app-footer": Footer,
   },
