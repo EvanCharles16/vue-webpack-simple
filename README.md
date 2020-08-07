@@ -28,3 +28,19 @@ If you want to learn more about VueJS Components, you may want to have a look at
 Also see: https://vuejs.org/v2/guide/components-registration.html
 
 ---
+
+### IMPORTANT
+
+You got props to pass data from a PARENT => CHILD.
+
+You got events (\$emit ) to pass data from CHILD => PARENT.
+
+<hr/>
+
+### Usefull Link
+
+- Official Docs - Props: http://vuejs.org/guide/components.html#Props
+- Official Docs - Custom Events: http://vuejs.org/guide/components.html#Custom-Events
+- Official Docs - Non-Parent-Child Communication: http://vuejs.org/guide/components.html#Non-Parent-Child-Communication
+
+---

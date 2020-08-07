@@ -1,17 +1,29 @@
 <template>
   <div class="col-xs-12 col-sm-6">
     <ul class="list-group">
-      <li class="list-group-item" v-for="index in 5" :key="index">Server #{{ index }}</li>
+      <app-server v-for="server in servers" :serverProps="server" :key="server"></app-server>
     </ul>
   </div>
 </template>
 
 <script>
-export default {};
+import Server from "./Server";
+export default {
+  data: function () {
+    return {
+      servers: [
+        { id: 1, status: "Normal" },
+        { id: 2, status: "Critical" },
+        { id: 3, status: "Unknown" },
+        { id: 4, status: "Normal" },
+      ],
+    };
+  },
+  components: {
+    appServer: Server,
+  },
+};
 </script>
 
 <style scoped>
-div {
-  border: 1px solid blue;
-}
 </style>
